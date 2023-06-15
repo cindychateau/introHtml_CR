@@ -4,18 +4,27 @@
     <meta charset="UTF-8"> <!-- abecedario latino -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas con HTML</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Ligamos la hoja de estilos -->
 </head>
 <body>
-    <h1>Título h1</h1>
+    <h1 id="titulo_h1">Título h1</h1>
     <h2>H2</h2>
-    <h3>H3</h3>
+    <h3 class="azul italica">H3</h3>
     <h4>H4</h4>
     <h5>H5</h5>
-    <h6>H6</h6>
+    <h6 class="azul">H6</h6>
 
-    <p>Párrafo, Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium recusandae animi obcaecati aperiam? Quod doloribus non maiores minus cum quisquam, cumque dignissimos! Numquam hic dolorem vero reiciendis error quo?</p>
+    <p>Párrafo, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab dolores iste porro enim facere, molestiae impedit atque ex similique fuga temporibus eos explicabo ullam repudiandae eveniet tempore quam? Aperiam, asperiores.</p>
 
-    <a href="http://google.com">Enlace</a>
+    <a href="http://google.com">Enlace</a> <!-- anchor -->
+
+    <div class="contenedor">
+        <h4>Este es un hijo</h4>
+        <p>Este es un párrafo hijo</p>
+        <div> <!-- HIJO -->
+            <h4>Este es un nieto</h4>
+        </div>
+    </div>
 
     <h2>Lista desordenada</h2>
     <ul>
@@ -59,6 +68,69 @@
             </tr>
         </tfoot>
     </table>
+
+    <img src="img/gatito.jpg" alt="Imagen de Gatito">
+
+    <div>
+        <p>Párrafo # 2</p>
+    </div>
+
+    <form action="/accion" method="post">
+
+        <div>
+            <label>Nombre:</label>
+            <input type="text" name="input_texto">
+            <input type="number" name="input_numeral">
+            <input type="password" name="input_contra" >
+            <input type="date" name="input_fecha">
+            <input type="email" name="input_email" >
+        </div>
+        <div>
+            <input type="radio" name="estado_civil" value="valor_casado" id="id_casado">
+            <label for="id_casado">Casado</label> <br>
+            <input type="radio" name="estado_civil" value="valor_soltero" id="id_soltero">
+            <label for="id_soltero">Soltero</label>
+        </div>
+        <div>
+            <input type="checkbox" name="mayor_edad" id="id_mayor_edad">
+            <label for="id_mayor_edad">¿Es mayor de edad?</label>
+        </div>
+        <div>
+            <label>¿Cuál es tu lenguaje de programación preferido?</label>
+            <select>
+                <option>Javascript</option>
+                <option>Python</option>
+                <option>C#</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="biografia" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar Formulario">
+        </div>
+    </form>
+    <h5 class="colorin">Estas son las propiedades de color</h5>
+    <p class="texto">
+        Estas son las propiedades de <span class="overline">texto</span> <strong>negritas</strong>
+    </p>
+    <div class="tamano">
+        Estas son las propiedades de tamaño
+    </div>
+
+    <div class="box-model">
+        Esta es mi caja
+    </div>
+
+    <h2 class="inline">Este es un ejemplo 1</h2>
+    <h2 class="inline">Este es un ejemplo 2</h2>
+
+    <input class="block" type="text" placeholder="Nombre">
+    <input class="block" type="password" placeholder="Password">
+
+    <div id="div1" class="inline-block"></div>
+    <div id="div2" class="inline-block"></div>
+    <div id="div3" class="inline-block"></div>
 
 </body>
 </html>
